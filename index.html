@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>GOLF MATCH</h1>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <h2 class="score" id="homeScore">0</h2>
+                <div>
+                    <button class="button" onclick="homeAdjust(-2)">EAGLE</button>
+                    <button class="button" onclick="homeAdjust(-1)">BIRDIE</button>
+                    <button class="button" onclick="homeAdjust(1)">BOGEY</button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <h2 class="score" id="guestScore">0</h2>
+                <div>
+                    <button class="button" onclick="guestAdjust(-2)">EAGLE</button>
+                    <button class="button" onclick="guestAdjust(-1)">BIRDIE</button>
+                    <button class="button" onclick="guestAdjust(1)">BOGEY</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+    <footer>
+        <button class="custom-button" onclick="winner()">FINAL</button>
+    </footer>
+    <div id="winnerBanner" class="winner-banner"></div>
+</html>

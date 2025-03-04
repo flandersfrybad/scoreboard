@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-image: url("./golf.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}   
+h1 {
+    color: green;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+.score {
+    background: lightcyan;
+    border-radius: 5px;
+    border: 3px solid green;
+    font-size: 88px;
+    width: 199px;
+    margin: 23px;
+}
+button {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid green;
+    background: lightcyan;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+.negative {
+    color: red;   
+}
+footer {
+    margin-top: 50px;
+    color: green;
+    text-align: center;
+    font-size: 33px;
+}
+.custom-button {
+    font-family: 'Orbitron', sans-serif;
+    color: lightcyan;
+    background: transparent;
+    border: none; /* Remove border */
+    transition: background-color 0.5s, color 4s, border 3s; /* Smooth transition */
+}
+.custom-button:hover {
+    background-color: lightcyan ;
+    color: green;
+    border: 1px solid green;
+}
+.winner-banner {
+    position: fixed;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 3px solid green;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    display: none; /* Initially hidden */
+}
